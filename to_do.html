@@ -6,7 +6,7 @@
         <style>
             body{
                 font-family:Arial,sans-serif;
-                background:#f2f2f2;
+                background:#40bc21;
                 text-align:center;
             }
             container{
@@ -20,6 +20,7 @@
             input {
                 width:70%;
                 padding:5px;
+                background:yellow;
             }
             button{
                 padding:5px 10px;
@@ -62,7 +63,7 @@
                 var li = document.createElement("li");
                 li.innerHTML = task + "<span class='delete' onclick = 'removeTask(this)'>x</span>";
 
-                document.getElementById("taskList").appendchild(li);
+                document.getElementById("taskList").appendChild(li);
                 document.getElementById("taskInput").value="";
             }
 
